@@ -1,0 +1,46 @@
+#Enter Laboratory exercises Scores:
+#Lab Exer 1: 90
+#Lab Exer 2: 90
+#Lab Exer 3: 90
+#35% of 90 is 31.5
+#Enter Hands on Exam Score : 90
+#25% of 90 is 22.5
+#Enter attendance grade : 100
+#5% of 100 is 5
+#Enter Major Exam Score: 88
+#20% of 88 is 17.6
+#Your Grade is : 90.1
+name=input("Enter your name:")
+print("Enter Quizzes Scores")
+quiz1=int(input("Quiz#1: "))
+quiz2=int(input("Quiz#2: "))
+quiz3=int(input("Quiz#3: "))
+quizaverage=(quiz1+quiz2+quiz3)/3
+print("Hi " + name+ " your quiz average is " +str(quizaverage))
+average15=(quizaverage*.15)
+print("15% of average quiz is " +str(average15))
+print()
+print("Enter Laboratory exercises Scores:")
+labexercise1=int(input("Lab Exer 1: "))
+labexercise2=int(input("Lab Exer 2: "))
+labexercise3=int(input("Lab Exer 3: "))
+labexeraverage=(labexercise1+labexercise2+labexercise3)/3
+print("Hi " + name+ "your laboratory exercise average is "
++str(labexeraverage))
+percentoflabexeaverage=(labexeraverage*.35)
+print("35% of " , labexeraverage , " is "+ str(percentoflabexeaverage))
+print()
+hanson=int(input("Enter Hands on Exam Score :"))
+phandson=(hanson*.25)
+print("25% of ", hanson, " is "+ str(phandson))
+print()
+attend=int(input("Enter attendance grade : "))
+pattend=(attend*.05)
+print("5% of ", attend, " is "+ str(pattend))
+print()
+major=int(input("Enter Major Exam Score : "))
+pmajor=(major*.20)
+print("20% of ", major, " is "+ str(pmajor))
+print()
+grade=(average15+percentoflabexeaverage+phandson+pattend+pmajor)
+print("Your Grade is "+ str(grade))
