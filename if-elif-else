@@ -1,0 +1,16 @@
+prelim= int(input("Enter Prelim Grade: "))
+midterm= int(input("Enter Midtem Grade: "))
+finals int(input("Enter Final Grade: "))
+print()
+grade = (prelim+midterm+finals)/3 print("Grade is: ", grade)
+print()
+if grade >= 95:
+  print("The equivalent letter grade of ", grade, "is A")
+elif grade >= 90:
+  print("The equivalent letter grade of ", grade, "is 8")
+elif grade > 83:
+  print("The equivalent letter grade of", grade, "is C")
+elif grade >= 74:
+  print("The equivalent letter grade of", grade, "is D")
+else:
+  print "The equivalent letter grade of", grade, "is F"]
